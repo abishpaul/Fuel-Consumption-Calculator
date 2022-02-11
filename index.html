@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Consumption Calculator</title>
+</head>
+
+<body>
+
+
+
+
+    <h1>Fuel Consumption Calculator</h1>
+    <p>Distance Driven (km):<input id="distance" type="number" min="150" max="1000000" onchange="computeConsumption()">
+    </p>
+    <p>Fuel Consumed (L):<input id="fuel" type="number" min="10" max="10000000" step="1"
+            onchange="computeConsumption()"></p>
+    <p>Cost per Unit of Fuel: $ <input id="costper" type="number" min="1.49" max="10" step="0.01" value="1.49"
+            onchange="computeConsumption()"></p>
+    <h2 id="consumption"></h2>
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
